@@ -1,0 +1,14 @@
+
+model_params:
+  backbone: 'resnet18' # 'resnet50' 'resnet101' 'resnet152'
+  pretrained: True
+  weights: 0 #path weights
+  num_epochs: 1
+  num_classes: 1
+data_params:
+  batch_size: 64
+  path_train_image: './data/train/image'
+  path_train_annotation: './data/train/annotation'
+  path_valid_image: './data/valid/image'
+  path_valid_annotation: './data/valid/annotation'
+  image_size : 256
